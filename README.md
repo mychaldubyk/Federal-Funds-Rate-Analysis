@@ -15,6 +15,10 @@ We are sourcing the data set for this project from the St. Louis Fed FRED Econom
 
 ## Modeling and Results
 
+![Baseline Model Vs. Test Data](Images/final_baseline.png)
+
+![Predicted Interest Rate Vs. Test Data](Images/vis.png)
+
 ## Conclusion
 
 The Federal Funds Rate is the shortest term loan interest rate and is the foundation of credit markets. Our best model can be used to help predict and forecast the Federal Funds Rate, which in turn will guide financial institutions and emerging Fintech companies to avoid both credit and interest rate risk. We strive to utilize our model to limit credit/debt losses during periods of high stress and/or inflation. Our model was off by 1.92 percentage points versus the unseen test data which compares to 3.49 percentage points on the baseline Random Walk Model. Our best models AIC score also compares favorably, with an AIC score of 38.8 versus 822 for the baseline model. Lastly, our model forecasts interest rates increasing until 2025 until moving into negative rate territory in 2026, following Europe and Japan previously. With this forward-looking insight, lenders can limit credit losses by reducing exposure to credit on their balance sheet and slowing lending rates until the Federal Funds Rate peaks around 2025.
