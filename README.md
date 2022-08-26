@@ -15,9 +15,22 @@ We are sourcing the data set for this project from the St. Louis Fed FRED Econom
 
 ## Modeling and Results
 
+### Validation RMSE For All Models
+![Validation Set RMSE By Model Type](Images/val_RMSE.png)
+
+Here we can see each models performance against the validation set. Oddly, the ARIMA model that combines the AR & MA model performed the worst against the validation set. More research will need to be completed to figure out why. The red bar shows our best model, the SARIMA, which was off by 1.47 percentage points versus the validation set.
+
+### Baseline vs Best Model Against Test Data
 ![Baseline Model Vs. Test Data](Images/final_baseline.png)
 
 ![Predicted Interest Rate Vs. Test Data](Images/vis.png)
+
+Here we can see our final models performance (results_2 model above) against the baseline random walk model for the test data set. Our model was off by 1.92 percentage points against the test set, which is much improved from the 3.49 percentage points see above for the baseline model on the validation set. Our visuals here confirms our calculations.
+
+### SARIMA Model 5 Year Forecast
+![SARIMA Model 5 Year Forecast](Images/SARIMA_forecast.png)
+
+The five year forecast for our best SARIMA model has interest rates peaking in 2025 and actually going negative in 2026. This is quite the prediction, as the United States has never had negative interest rates, unlike their European and Japanese counterparts.
 
 ## Conclusion
 
